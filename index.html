@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181210" />
+    <meta name="description" content="Pizzaria Don Lourenço: pizzas promocionais e especiais. Peça pelo WhatsApp." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://images.unsplash.com; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests" />
+    <title>Don Lourenço | Pizza artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      <span class="announcement__dot" aria-hidden="true"></span>
+      Frete grátis acima de R$ 60 <span class="announcement__separator">•</span> entrega estimada em 35–45 min
+      <a href="#ofertas">Ver ofertas <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Pizzaria Don Lourenço, início">
+        <img class="brand__logo" src="LogoPizzaria.jpeg" alt="Pizzaria Don Lourenço — Sabor que conquista" />
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contato">Peça pelo WhatsApp</a>
+      </nav>
+      <button class="cart-trigger" id="open-cart" type="button" aria-label="Abrir sacola">
+        <span class="cart-trigger__label">Sua sacola</span>
+        <span class="cart-trigger__icon" aria-hidden="true">↗</span>
+        <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow"><span></span> PIZZARIA DON LOURENÇO</p>
+          <h1 id="hero-title">Sabor que<br /><em>conquista.</em></h1>
+          <p class="hero__copy">Pizzas promocionais por R$ 38,99 e especiais por R$ 45,00. Escolha a sua e peça direto pelo WhatsApp.</p>
+          <a class="button button--light" href="#cardapio">Escolha sua pizza <span aria-hidden="true">↓</span></a>
+          <div class="hero__note"><span aria-hidden="true">✳</span> Entrega estimada: 35–45 min</div>
+        </div>
+        <div class="hero__image" role="img" aria-label="Pizza artesanal saindo do forno a lenha"></div>
+        <div class="hero__stamp" aria-hidden="true"><span>PEÇA PELO</span><strong>ZAP</strong><span>(11) 94574<br />3922</span></div>
+        <div class="hero__index" aria-hidden="true">01 — 03</div>
+      </section>
+
+      <section class="flyer-section" id="ofertas" aria-labelledby="flyer-title">
+        <div class="flyer-copy">
+          <p class="eyebrow eyebrow--dark">OFERTAS DO FORNO</p>
+          <h2 id="flyer-title">Escolha pelo<br /><em>cartaz.</em></h2>
+          <p>As pizzas promocionais e especiais da Don Lourenço, como aparecem nos nossos anúncios.</p>
+          <a class="text-link" href="#cardapio">Ver sabores e preços <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="flyer-artwork">
+          <a href="#cardapio" aria-label="Ver pizzas promocionais por R$ 38,99">
+            <img src="stitch_pizzaria_don_louren_o_delivery/pizzaria2.png/screen.png" alt="Cartaz de pizzas promocionais: meia calabresa com mussarela, Bauru, Toscana e Baiana por R$ 38,99" />
+          </a>
+          <a href="#cardapio" aria-label="Ver pizzas especiais por R$ 45,00">
+            <img src="stitch_pizzaria_don_louren_o_delivery/pizzaria.png/screen.png" alt="Cartaz de pizzas especiais: atum com palmito, peperoni, frango com Catupiry, três queijos, lombo e mussarela por R$ 45,00" />
+          </a>
+        </div>
+      </section>
+
+      <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow--dark">O QUE SAI DO FORNO</p>
+            <h2 id="menu-title">Pizzas que <em>conquistam.</em></h2>
+          </div>
+          <p class="section-heading__aside">Escolha seu sabor<br />e peça pelo WhatsApp.</p>
+        </div>
+
+        <div class="menu-toolbar">
+          <div class="category-tabs" role="group" aria-label="Filtrar cardápio">
+            <button class="category-tab is-active" data-category="todas" type="button" aria-pressed="true">Todas</button>
+            <button class="category-tab" data-category="promocionais" type="button" aria-pressed="false">Promocionais · R$ 38,99</button>
+            <button class="category-tab" data-category="especiais" type="button" aria-pressed="false">Especiais · R$ 45,00</button>
+          </div>
+          <span class="menu-toolbar__meta"><span class="status-dot"></span> Frete grátis acima de R$ 60</span>
+        </div>
+
+        <div class="pizza-grid" id="pizza-grid" aria-live="polite"></div>
+        <div class="menu-footer"><span>10 sabores</span><span>Entrega estimada: 35–45 min</span><a href="#contato">Peça pelo WhatsApp ↗</a></div>
+      </section>
+
+      <section class="order-band" id="contato" aria-labelledby="order-title">
+        <div>
+          <p class="eyebrow"><span></span> DON LOURENÇO · SABOR QUE CONQUISTA</p>
+          <h2 id="order-title">Faça seu pedido<br />pelo <em>WhatsApp.</em></h2>
+        </div>
+        <a class="button button--whatsapp" href="https://wa.me/5511945743922" target="_blank" rel="noopener noreferrer">
+          Chamar (11) 94574-3922 <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#inicio" aria-label="Pizzaria Don Lourenço, início"><img class="brand__logo" src="LogoPizzaria.jpeg" alt="Pizzaria Don Lourenço — Sabor que conquista" /></a>
+      <a class="footer-contact" href="https://wa.me/5511945743922" target="_blank" rel="noopener noreferrer">WhatsApp (11) 94574-3922 ↗</a>
+      <span>Don Lourenço · Sabor que conquista</span>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
+      <div class="cart-panel__header">
+        <div><p class="eyebrow eyebrow--dark">SUA ESCOLHA</p><h2 id="cart-title">Sua sacola<span id="cart-title-count"></span></h2></div>
+        <button class="icon-button" id="close-cart" type="button" aria-label="Fechar sacola">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-empty" id="cart-empty"><span aria-hidden="true">✳</span><p>Ainda está vazia.</p><button class="text-link" id="browse-menu" type="button">Escolher uma pizza <span aria-hidden="true">↗</span></button></div>
+      <div class="cart-panel__footer" id="cart-footer" hidden>
+        <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">R$ 0,00</strong></div>
+        <p id="cart-delivery-note">Frete grátis acima de R$ 60.</p>
+        <button class="button button--dark" id="continue-shopping" type="button">Continuar escolhendo <span aria-hidden="true">↗</span></button>
+      </div>
+    </aside>
+  </body>
+</html>
