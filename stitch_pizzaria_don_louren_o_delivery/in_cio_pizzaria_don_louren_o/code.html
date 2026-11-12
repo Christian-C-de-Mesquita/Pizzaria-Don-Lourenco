@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed-dim": "#f6bf22", "on-primary-fixed": "#410007", "tertiary-fixed-dim": "#77da9f", "on-primary-fixed-variant": "#92001c", "on-secondary-fixed": "#251a00", "on-secondary-fixed-variant": "#5a4300", "surface": "#181210", "surface-container-high": "#2f2826", "inverse-surface": "#ede0dc", "background": "#181210", "inverse-on-surface": "#362f2c", "on-tertiary": "#00391f", "error": "#ffb4ab", "surface-container-highest": "#3b3331", "surface-dim": "#181210", "on-secondary-container": "#584200", "error-container": "#93000a", "outline-variant": "#5c403f", "secondary": "#ffc72c", "on-tertiary-container": "#93f7ba", "inverse-primary": "#bf0229", "surface-bright": "#3f3835", "on-secondary": "#3f2e00", "surface-container-low": "#201a18", "secondary-fixed": "#ffdf99", "tertiary": "#77da9f", "on-error": "#690005", "primary-container": "#c8102e", "on-error-container": "#ffdad6", "primary": "#ffb3b1", "on-primary": "#680011", "on-surface": "#ede0dc", "secondary-container": "#e0ac00", "surface-container-lowest": "#130d0b", "surface-tint": "#ffb3b1", "on-tertiary-fixed": "#002110", "outline": "#ac8887", "tertiary-container": "#007445", "surface-container": "#251e1c", "on-surface-variant": "#e5bdbb", "on-tertiary-fixed-variant": "#00522f", "surface-variant": "#3b3331", "on-primary-container": "#ffdad8", "primary-fixed": "#ffdad8", "tertiary-fixed": "#93f7ba", "primary-fixed-dim": "#ffb3b1", "on-background": "#ede0dc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "margin": "1.5rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xl": "2.25rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-lg": ["Epilogue"], "headline-sm": ["Epilogue"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Epilogue"], "headline-md": ["Epilogue"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Epilogue"], "price-tag": ["Epilogue"], "display-hero": ["Epilogue"] }, fontSize: { "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "price-tag": ["20px", { "lineHeight": "24px", "fontWeight": "800" }], "display-hero": ["36px", { "lineHeight": "44px", "fontWeight": "800" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#181210;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-28 px-margin-mobile flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs flex-1 min-w-0"><img alt="Logo Don Lourenço" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrD6zCsZSLSFpyse6h_yOLlscLymCxT9tTwfsYaGBO43F6xPjSMFNopWNfAhu4hmaaZLlVcksplCFbzYqHU2MM9u2V1TRwu9mARiWQFkflmr2B1_lJHlYi9jopbC0sqdWifQtiupCMN2MP13s1tYiGSsD_bbFapNqOsfh3puzPGKMJ2w6eYHNzHWpE9ttd8r-Aq8yogIV3NMVT750a8XIXUPb1KQNEr6x2LrDyZAjrNm"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1 cursor-pointer"><span class="material-symbols-outlined text-secondary text-[16px] flex-shrink-0">location_on</span><span class="font-label-md text-label-md text-on-surface truncate">Rua das Flores, 142 - Apto 32</span><span class="material-symbols-outlined text-on-surface-variant text-[16px] flex-shrink-0">expand_more</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Don Lourenço • Início</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:text-secondary transition-colors" data-path="busca" href="#"><span class="material-symbols-outlined text-[20px]">search</span></a><a class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:text-secondary transition-colors" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><a class="flex items-center justify-center p-0.5 rounded-full hover:ring-2 hover:ring-secondary/50 transition-all" data-path="perfil" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWq-7C9ryRno1dDb85_HEg2a2KWjtncuDCpJgMxUJZfwHizjA5WK79Lgz1x3kv-ktNetY6vOM6-dj2G8u5wiEThyzd4lzdDEgeFbQaSTHlJeLdmCBPXEEJl3LNcnrdIubRThsZk6JK4bbQal8PR9mx7g28jfjSWVSWnG61nh3D6o-Sg0sf9oZrf71bYxIe-C0PGe2SjJtgX1eFA8gdaUgnWYygn6hVE7gDSTw5ik"/></a></div></div><div class="flex items-center gap-space-xs overflow-x-auto whitespace-nowrap py-0.5 scrollbar-none"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm flex-shrink-0"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>Aberto agora</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-shrink-0">•</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-shrink-0"><span class="material-symbols-outlined text-[14px] align-text-bottom text-on-surface-variant mr-0.5">schedule</span>35-45 min</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-shrink-0">•</span><span class="font-label-sm text-label-sm text-secondary flex-shrink-0 font-semibold"><span class="material-symbols-outlined text-[14px] align-text-bottom text-secondary mr-0.5">two_wheeler</span>Frete Grátis acima de R$ 60</span></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-28 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full gap-space-md">
+<!-- Interactive Search Input Bar (Delivery App standard) -->
+<div class="relative w-full">
+<div class="flex items-center gap-space-sm bg-surface-container rounded-xl px-space-md py-space-sm shadow-md transition-all focus-within:bg-surface-container-high focus-within:shadow-lg">
+<span class="material-symbols-outlined text-secondary text-[22px]">search</span>
+<input class="bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none w-full" placeholder="Buscar sabor, pizza doce, refrigerante..." type="text"/>
+<button aria-label="Filtrar cardápio" class="p-1 rounded-lg text-on-surface-variant hover:text-secondary hover:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- WhatsApp Fast-Order Direct Banner -->
+<div class="bg-tertiary-container text-on-tertiary-container rounded-xl p-space-sm px-space-md flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim uppercase tracking-wider font-bold">Peça direto pelo Zap</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed truncate">(11) 94574-3922</span>
+</div>
+</div>
+<a class="bg-tertiary text-on-tertiary px-space-md py-1.5 rounded-full font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm active:scale-95 transition-transform flex-shrink-0" href="https://wa.me/5511945743922?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido%20na%20Don%20Louren%C3%A7o!" target="_blank">
+<span>Chamar</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Dynamic Featured Carousel: Based on Promo Flyers (Wood-fired oven & ember atmosphere) -->
+<div class="relative w-full overflow-hidden rounded-xl bg-surface-container-lowest shadow-xl">
+<div class="flex transition-transform duration-500 ease-out" id="promoCarousel">
+<!-- Slide 1: Pizzas Promocionais R$ 38,99 -->
+<div class="min-w-full relative overflow-hidden p-space-md flex flex-col justify-between aspect-[16/10]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Close up artisan oven-baked half calabresa and half mozzarella pizza on a rustic wooden board with glowing fire pit embers in background, molten bubbling cheese, thin sliced spiced calabresa sausage, deep red tomato sauce, warm dark rustic Italian pizzeria photography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkxjQR7MmYCabtNn2cch3goHghcvt57vPYyjwiOCpm4uWEqLjziJ8A71Fc13CALyZAq0wdxeLfoK5kaDf8ZnBWnN-cid13h1yCZ6ktxotWM2gdU0W-y5rEglxOORhVINts6mri7_FQiFsxZJMGrHv7TWVLMN_Luru-z2uKT85nHSe_CdRs2p0RRCTjnbFFSsyfmhf3_6mlhXvwymxJcZ-a-Mx33kXBD4jaEF2beeU')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wide font-extrabold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+            Super Promoção
+          </div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 text-on-surface px-2 py-0.5 rounded-full backdrop-blur-sm">
+            1/2
+          </span>
+</div>
+<div class="relative z-10 flex items-end justify-between gap-space-sm mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Sabor que conquista</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface uppercase drop-shadow-md">
+              Pizzas Promocionais
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+              Bauru • Toscana • Baiana • Meia Calabresa &amp; Meia Mussarela
+            </p>
+</div>
+<div class="bg-secondary text-on-secondary px-space-md py-1.5 rounded-xl flex flex-col items-center shadow-lg flex-shrink-0 animate-bounce">
+<span class="font-label-sm text-[10px] uppercase font-bold leading-none">Apenas</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-label-sm text-label-sm font-bold">R$</span>
+<span class="font-price-tag text-price-tag font-extrabold">38<span class="text-xs">,99</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Slide 2: Pizzas Especiais R$ 45,00 -->
+<div class="min-w-full relative overflow-hidden p-space-md flex flex-col justify-between aspect-[16/10]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Artisanal pepperoni and melted catupiry chicken pizza baked in Italian rustic wood-fired oven with fiery flames, scattered fresh basil leaves and sun-ripened tomatoes, dramatic dark food delivery lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA4TjF-N0mLjoRxs0JKmXO856cIVvlM0D3LqXcIWIN8DHREc4EGjxdcpl-MeTBAxBrhyc8A-rxTTW1Z5zfGaFb0xSveg05hSFxaILoETJA_dCqmWZG9DdHX1i48MAz6rp3_xznfvimuGlJLIuk3acY-ojxGKJb__HEHpjrfAZIQOTXo8B8_jFU2TnR6dSxybbPJz0ajSuNFlXclmckgh3eN9Ivki8rwi07RZicDtJ8')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/40 to-transparent"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-wide font-extrabold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">star</span>
+            Linha Especial
+          </div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest/80 text-on-surface px-2 py-0.5 rounded-full backdrop-blur-sm">
+            2/2
+          </span>
+</div>
+<div class="relative z-10 flex items-end justify-between gap-space-sm mt-auto">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-wider uppercase">Receitas Selecionadas</span>
+<h2 class="font-display-hero-mobile text-display-hero-mobile text-on-surface uppercase drop-shadow-md">
+              Pizzas Especiais
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">
+              Atum Palmito • Peperoni • Frango Catupiry • 3 Queijos • Lombo
+            </p>
+</div>
+<div class="bg-primary-container text-on-primary-container px-space-md py-1.5 rounded-xl flex flex-col items-center shadow-lg flex-shrink-0">
+<span class="font-label-sm text-[10px] uppercase font-bold leading-none">Preço Fixo</span>
+<div class="flex items-baseline gap-0.5">
+<span class="font-label-sm text-label-sm font-bold">R$</span>
+<span class="font-price-tag text-price-tag font-extrabold">45<span class="text-xs">,00</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Carousel Indicator Dots -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-20">
+<button aria-label="Slide 1" class="w-5 h-1.5 rounded-full bg-secondary transition-all" id="dot-0" onclick="goToSlide(0)"></button>
+<button aria-label="Slide 2" class="w-1.5 h-1.5 rounded-full bg-surface-container-highest transition-all" id="dot-1" onclick="goToSlide(1)"></button>
+</div>
+</div>
+<!-- Category Pills (Horizontal Navigation Slider 99Food/iFood Style) -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Categorias</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Ver tudo</span>
+</div>
+<div class="flex gap-space-xs overflow-x-auto whitespace-nowrap py-1 scrollbar-none -mx-margin-mobile px-margin-mobile">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold shadow-sm transition-transform active:scale-95 flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">local_fire_department</span>
+<span>Promoções (R$ 38,99)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">workspace_premium</span>
+<span>Especiais (R$ 45,00)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">local_pizza</span>
+<span>Tradicionais</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[18px]">cookie</span>
+<span>Pizzas Doces</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]">sports_bar</span>
+<span>Bebidas &amp; Vinhos</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex-shrink-0">
+<span class="material-symbols-outlined text-secondary text-[18px]">group</span>
+<span>Combos Família</span>
+</button>
+</div>
+</div>
+<!-- Section: Mais Pedidas na Sua Região (Horizontal cards with 99Food/iFood layout) -->
+<div class="flex flex-col gap-space-sm mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="text-primary-container text-xl font-bold">🔥</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mais Pedidas na Sua Região</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top Vendas</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Product Card 1: Meia Calabresa e Meia Mussarela -->
+<div class="bg-surface-container rounded-xl p-space-sm flex gap-space-sm items-center shadow-md relative overflow-hidden transition-all active:bg-surface-container-high">
+<div class="relative w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Top down overhead shot of half smoked calabresa with onion slices and half melted golden mozzarella pizza on rustic board, oven char marks, basil leaf garnish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkQ12tahUCIz98776UYbc3KFBhtbHDz6t5j0sQRYo_-eWR1N1WYb9pwzlw_xuzcayIEt0h2gt7BI0z0Cl6QYDZm2u4P4tyazq7ReUn49oLy8sBBCpjdbFYCHNS_eBlg8oJj1_EbrPlkk-DPRozNzJbtpgK4l-MXXGhfzER9QSOLRYCMrL9WnrHgfHtm9v8ipIaa4uYq0yBMmsPbV6DUQYISOaRoc1VDJU8KXoVohM"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-on-secondary font-label-sm text-[10px] px-1.5 py-0.5 rounded font-extrabold shadow-sm">
+            R$ 38,99
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0 h-28 py-0.5">
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate font-bold">Meia Calabresa &amp; Mussarela</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Molho rústico de tomate, calabresa fatiada crocante, cebolas finas e queijo mussarela gratinado no forno à lenha.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<div class="flex items-baseline gap-1.5">
+<span class="font-body-sm text-body-sm text-on-surface-variant/70 line-through">R$ 48,00</span>
+<span class="font-price-tag text-headline-sm text-secondary font-extrabold">R$ 38,99</span>
+</div>
+<button aria-label="Adicionar Meia Calabresa ao carrinho" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-transform" onclick="addToCart('Meia Calabresa &amp; Mussarela', 38.99)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2: Peperoni Especial -->
+<div class="bg-surface-container rounded-xl p-space-sm flex gap-space-sm items-center shadow-md relative overflow-hidden transition-all active:bg-surface-container-high">
+<div class="relative w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Mouthwatering pepperoni pizza with generous cups of crisped spicy pepperoni, rich bubbling melted mozzarella cheese, golden crust, wood fired background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjHOaawqHgYsPUWwoxWsir5zaVqAEP2rCCKTlw_xtE14Uv76NKnC-84c1A0cpRs2LWp1TAjEVuNTOqlvIsLuXIryF_9GQQjNimK8guvGVjdreeuBOJSp5aVlmuDAoHfMCbN5WTKVEbzVU4PanC4BXbZ520o943E2jgHoRnQr9QabwdnIPN0TaCKyT8LaruCd5biSHgMz-bVkqXAWmBlBsiW2PIQztrN-rH2qHVRlU"/>
+<span class="absolute top-1.5 left-1.5 bg-primary-container text-on-primary-container font-label-sm text-[10px] px-1.5 py-0.5 rounded font-extrabold shadow-sm">
+            Especial
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0 h-28 py-0.5">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-bold">Peperoni Especial</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Generosas fatias de pepperoni premium picante, mussarela especial Don Lourenço e orégano fresco perfumado.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-price-tag text-headline-sm text-secondary font-extrabold">R$ 45,00</span>
+<button aria-label="Adicionar Peperoni Especial ao carrinho" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-transform" onclick="addToCart('Peperoni Especial', 45.00)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3: Frango com Catupiry Original -->
+<div class="bg-surface-container rounded-xl p-space-sm flex gap-space-sm items-center shadow-md relative overflow-hidden transition-all active:bg-surface-container-high">
+<div class="relative w-28 h-28 flex-shrink-0 rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Brazilian style chicken and catupiry cheese pizza with spiral catupiry topping over juicy seasoned shredded chicken breast, golden baked edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcR4B0EGTadtRrqz6_8ET0xZ2f2-zt8kXXhJhfbP2UmsJpVTTdCqPsTLHg_nbsI4ZEA7YcPYizznmq1hpojYueYCUJSbhZnCnP-zxSbZpGToNTwKXwcorSAsTK2bGmGXffc9U0tUclDgWXyctYCci5YLkvtdSLDyUxzfjkExUBPLstMhbEtA8Xfz703f2WwyvNI310ry9vEpdhaWVNRQH7-Zykv7VW7q7rQJIU4FE"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary text-on-secondary font-label-sm text-[10px] px-1.5 py-0.5 rounded font-extrabold shadow-sm">
+            Favorita
+          </span>
+</div>
+<div class="flex flex-col justify-between flex-1 min-w-0 h-28 py-0.5">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate font-bold">Frango com Catupiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Frango desfiado suavemente temperado com especiarias da casa, coberto por generosa espiral de Catupiry original.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-auto">
+<span class="font-price-tag text-headline-sm text-secondary font-extrabold">R$ 45,00</span>
+<button aria-label="Adicionar Frango Catupiry ao carrinho" class="w-9 h-9 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md active:scale-90 transition-transform" onclick="addToCart('Frango com Catupiry', 45.00)">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Ofertas Relâmpago Don Lourenço (Flash Deals with Live Timer) -->
+<div class="flex flex-col gap-space-sm mt-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">bolt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Ofertas Relâmpago</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-[14px]">timer</span>
+<span class="font-label-sm text-label-sm text-primary font-mono font-bold" id="countdown">01:42:18</span>
+</div>
+</div>
+<!-- 2-column Compact Bento Cards for Fast ordering -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Promo Item 1: Pizza Baiana -->
+<div class="bg-surface-container rounded-xl p-space-sm flex flex-col justify-between shadow-md relative">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-2 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Pizza baiana with sliced boiled eggs, spicy ground meat, sliced red onions and black pepper baked in hot pizza oven, Brazilian artisanal food" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7EnkEw4lHREZV7yVpg0rzA3u33xeAYbTfqvVbXF6ced7Y_IHN3zWGkqLEGDanpK6-j1vU60PceI8iRVlOAD-MwPgo9jUzPXSkI5lYD01acBykuUoFkf0_XL4hl2x19_ckbULoDu7NmDtqrE5To71Sal36bswQhwTEIuPzJLylDwj13qKh5lNeE1kGfnzU4MG9cE_6Zp2buwYGIGw48mzOBcGwH3n2ifVarAYASfM"/>
+<span class="absolute bottom-1 left-1 bg-primary-container text-on-primary-container font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold">
+            -20% OFF
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Pizza Baiana</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Calabresa moída, ovos &amp; pimenta</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant/70 line-through">R$ 48,00</span>
+<span class="font-price-tag text-headline-sm text-secondary font-bold">R$ 38,99</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold active:scale-95 shadow-sm" onclick="addToCart('Pizza Baiana', 38.99)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Promo Item 2: Pizza Toscana -->
+<div class="bg-surface-container rounded-xl p-space-sm flex flex-col justify-between shadow-md relative">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-2 bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Pizza toscana with melted mozzarella cheese topped with savory crushed Tuscan sausage, sliced tomatoes, rings of sweet onion and fragrant dried herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEtuk_bDrGt9IQYhNq63MAhOPcd6EIcp4SN_vD5N6K9f_7wgJMQ7mLyPxWN-OEa1nemXkyEyrwzxtisw8tzL3qN5T_cnmHiKptWD2uYHeTJpnX0Z9I1DfrcRvh7zmqdg-38hKP1Ag_OnOc-x8sW3yTOTm07oEeUP9wig-U-hLjQkIvsF_MIo9Zn7Ank3q3A3CcD61JWMJ0k6hDQuQ6G9MXwipPJFUTek4tbxYxfTA"/>
+<span class="absolute bottom-1 left-1 bg-primary-container text-on-primary-container font-label-sm text-[10px] px-1.5 py-0.5 rounded font-bold">
+            -20% OFF
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Pizza Toscana</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant truncate">Mussarela, linguiça toscana &amp; tomate</span>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant/70 line-through">R$ 48,00</span>
+<span class="font-price-tag text-headline-sm text-secondary font-bold">R$ 38,99</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold active:scale-95 shadow-sm" onclick="addToCart('Pizza Toscana', 38.99)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Customer Loyalty / Gamification Banner -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex items-center justify-between gap-space-sm shadow-lg relative overflow-hidden mt-1">
+<div class="flex flex-col z-10 min-w-0">
+<div class="flex items-center gap-1 text-secondary mb-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">card_membership</span>
+<span class="font-label-sm text-label-sm uppercase font-extrabold tracking-wider">Clube Don Lourenço</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+        Ganhe 1 Broto Doce no 5º pedido!
+      </h3>
+<div class="flex items-center gap-2 mt-2">
+<!-- Stamp Progress Indicator -->
+<div class="flex items-center gap-1.5">
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px] font-bold">✓</div>
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px] font-bold">✓</div>
+<div class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px] font-bold">✓</div>
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-[10px] font-bold">4</div>
+<div class="w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[12px]">redeem</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Falta apenas 1!</span>
+</div>
+</div>
+<div class="w-16 h-16 rounded-full bg-surface-container-highest flex-shrink-0 flex items-center justify-center shadow-inner z-10 text-secondary">
+<span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">cake</span>
+</div>
+<!-- Warm ember ambient gradient -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary-container/20 blur-2xl pointer-events-none"></div>
+</div>
+<!-- Interactive Toast Notification container for instant cart feedback -->
+<div class="fixed bottom-20 left-4 right-4 z-50 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none" id="cartToast">
+<div class="bg-secondary text-on-secondary rounded-xl p-space-sm px-space-md shadow-2xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span class="font-label-md text-label-md font-bold" id="toastMessage">Item adicionado com sucesso!</span>
+</div>
+<span class="font-label-sm text-label-sm underline font-bold uppercase tracking-wider">Ver sacola</span>
+</div>
+</div>
+</div>
+<!-- Client-side Micro-interactions -->
+<script>
+  // Simple Carousel Slide Controller
+  let currentSlide = 0;
+  const totalSlides = 2;
+  const carouselEl = document.getElementById('promoCarousel');
+
+  function updateCarousel() {
+    if (!carouselEl) return;
+    carouselEl.style.transform = `translateX(-${currentSlide * 100}%)`;
+    const dot0 = document.getElementById('dot-0');
+    const dot1 = document.getElementById('dot-1');
+    if (dot0 && dot1) {
+      if (currentSlide === 0) {
+        dot0.className = 'w-5 h-1.5 rounded-full bg-secondary transition-all';
+        dot1.className = 'w-1.5 h-1.5 rounded-full bg-surface-container-highest transition-all';
+      } else {
+        dot0.className = 'w-1.5 h-1.5 rounded-full bg-surface-container-highest transition-all';
+        dot1.className = 'w-5 h-1.5 rounded-full bg-secondary transition-all';
+      }
+    }
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }, 4500);
+
+  // Cart Add Toast Micro-interaction
+  function addToCart(itemName, price) {
+    const toast = document.getElementById('cartToast');
+    const msg = document.getElementById('toastMessage');
+    if (toast && msg) {
+      msg.textContent = `${itemName} adicionada!`;
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-32', 'opacity-0');
+      }, 2500);
+    }
+  }
+
+  // Live Flash Offer Countdown Simulator
+  let seconds = 3600 * 1 + 60 * 42 + 18;
+  const timerEl = document.getElementById('countdown');
+  setInterval(() => {
+    if (seconds > 0) {
+      seconds--;
+      const hrs = String(Math.floor(seconds / 3600)).padStart(2, '0');
+      const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+      const secs = String(seconds % 60).padStart(2, '0');
+      if (timerEl) timerEl.textContent = `${hrs}:${mins}:${secs}`;
+    }
+  }, 1000);
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/90 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.35)]" data-active-classes="text-secondary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="inicio" href="#"><span class="material-symbols-outlined text-[22px]">local_pizza</span><span class="font-label-sm text-label-sm">Início</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="cardapio" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm">Cardápio</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="promocoes" href="#"><span class="material-symbols-outlined text-[22px]">local_offer</span><span class="font-label-sm text-label-sm">Promoções</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="pedidos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm">Pedidos</span></a><a class="flex flex-col items-center justify-center gap-0.5 w-16 h-12 text-on-surface-variant transition-colors" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Perfil</span></a></div></nav></body></html>

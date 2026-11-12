@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-fixed-dim": "#f6bf22", "on-primary-fixed": "#410007", "tertiary-fixed-dim": "#77da9f", "on-primary-fixed-variant": "#92001c", "on-secondary-fixed": "#251a00", "on-secondary-fixed-variant": "#5a4300", "surface": "#181210", "surface-container-high": "#2f2826", "inverse-surface": "#ede0dc", "background": "#181210", "inverse-on-surface": "#362f2c", "on-tertiary": "#00391f", "error": "#ffb4ab", "surface-container-highest": "#3b3331", "surface-dim": "#181210", "on-secondary-container": "#584200", "error-container": "#93000a", "outline-variant": "#5c403f", "secondary": "#ffc72c", "on-tertiary-container": "#93f7ba", "inverse-primary": "#bf0229", "surface-bright": "#3f3835", "on-secondary": "#3f2e00", "surface-container-low": "#201a18", "secondary-fixed": "#ffdf99", "tertiary": "#77da9f", "on-error": "#690005", "primary-container": "#c8102e", "on-error-container": "#ffdad6", "primary": "#ffb3b1", "on-primary": "#680011", "on-surface": "#ede0dc", "secondary-container": "#e0ac00", "surface-container-lowest": "#130d0b", "surface-tint": "#ffb3b1", "on-tertiary-fixed": "#002110", "outline": "#ac8887", "tertiary-container": "#007445", "surface-container": "#251e1c", "on-surface-variant": "#e5bdbb", "on-tertiary-fixed-variant": "#00522f", "surface-variant": "#3b3331", "on-primary-container": "#ffdad8", "primary-fixed": "#ffdad8", "tertiary-fixed": "#93f7ba", "primary-fixed-dim": "#ffb3b1", "on-background": "#ede0dc" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "margin": "1.5rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xl": "2.25rem", "space-md": "1rem", "space-xs": "0.25rem" }, fontFamily: { "headline-lg": ["Epilogue"], "headline-sm": ["Epilogue"], "label-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Epilogue"], "headline-md": ["Epilogue"], "body-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Epilogue"], "price-tag": ["Epilogue"], "display-hero": ["Epilogue"] }, fontSize: { "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "22px", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }], "label-lg": ["15px", { "lineHeight": "20px", "fontWeight": "700" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "600" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "26px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg-mobile": ["22px", { "lineHeight": "28px", "fontWeight": "700" }], "price-tag": ["20px", { "lineHeight": "24px", "fontWeight": "800" }], "display-hero": ["36px", { "lineHeight": "44px", "fontWeight": "800" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#181210;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:text-secondary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><div class="flex items-center gap-space-xs"><img alt="Logo Don Lourenço" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrD6zCsZSLSFpyse6h_yOLlscLymCxT9tTwfsYaGBO43F6xPjSMFNopWNfAhu4hmaaZLlVcksplCFbzYqHU2MM9u2V1TRwu9mARiWQFkflmr2B1_lJHlYi9jopbC0sqdWifQtiupCMN2MP13s1tYiGSsD_bbFapNqOsfh3puzPGKMJ2w6eYHNzHWpE9ttd8r-Aq8yogIV3NMVT750a8XIXUPb1KQNEr6x2LrDyZAjrNm"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Detalhe Da Pizza</h1></div></div><div class="flex items-center gap-space-xs"><a class="relative w-11 h-11 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:text-secondary transition-colors" data-path="carrinho" href="#"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-primary-container text-on-primary-container font-label-sm text-[10px] flex items-center justify-center font-bold">2</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWq-7C9ryRno1dDb85_HEg2a2KWjtncuDCpJgMxUJZfwHizjA5WK79Lgz1x3kv-ktNetY6vOM6-dj2G8u5wiEThyzd4lzdDEgeFbQaSTHlJeLdmCBPXEEJl3LNcnrdIubRThsZk6JK4bbQal8PR9mx7g28jfjSWVSWnG61nh3D6o-Sg0sf9oZrf71bYxIe-C0PGe2SjJtgX1eFA8gdaUgnWYygn6hVE7gDSTw5ik"/></div></div></header><main class="flex flex-col relative w-full px-margin-mobile pt-16 pb-space-lg bg-surface min-h-screen"><div class="flex flex-col w-full pb-24">
+<!-- Imagem Hero do Produto com Badges e Ações Flutuantes -->
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up mouth-watering shot of a half Calabresa half Mussarela pizza being pulled with melted stringy cheese stretching from the wood-fired brick oven. Rustic charred artisan crust, sizzling pepperoni slices, fresh basil leaves, hot steam, cinematic warm ember lighting with deep charcoal shadows and golden tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPnvj9zrpP4NxZYrJY1Yro4im0BXHvbzQkPa48e09mlr2KGNhAtz3Xeygxpexep0N_ACwtsO_7fXkanIPADKS7bH4ZNX9fCZzsvaOj7srqG0H6-kPE7GvVUz3OORaDXPeki8FALJVUgiNEwAxPokCh2Hi-m5pF_vm35m45m24sd5cRyEpHueMbIhf1QKto4Coq3MhhRzCy2iZP3RIPbihXtKG9V9LWedIkppOlv4c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-black/40"></div>
+<!-- Botões de Ação Sobrepostos -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-auto">
+<button aria-label="Voltar" class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-95 transition-transform" onclick="history.back()">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-center gap-2">
+<button aria-label="Compartilhar" class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-on-surface flex items-center justify-center active:scale-95 transition-transform" id="btn-share">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+<button aria-label="Favoritar" class="w-10 h-10 rounded-full bg-surface-container-highest/80 backdrop-blur-md text-primary flex items-center justify-center active:scale-95 transition-transform" id="btn-favorite" onclick="toggleFavorite(this)">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+</div>
+<!-- Badge Promocional em Destaque na Foto -->
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary text-on-secondary shadow-lg">
+<span class="material-symbols-outlined text-[16px] text-on-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md">Super Promoção da Noite</span>
+</div>
+<!-- Indicador de Porções -->
+<div class="absolute bottom-3 right-3 flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">local_pizza</span>
+<span>8 Fatias • 35cm</span>
+</div>
+</div>
+<!-- Cabeçalho de Informações do Prato -->
+<div class="flex flex-col pt-4 pb-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Mais Pedida • Forno a Lenha</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-extrabold tracking-tight">Meia Calabresa e Meia Mussarela</h2>
+</div>
+</div>
+<!-- Preços com Desconto -->
+<div class="flex items-baseline gap-2.5 mt-2">
+<span class="font-price-tag text-price-tag text-secondary font-black">R$ 38,99</span>
+<span class="font-body-md text-body-md line-through text-outline">R$ 48,00</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">-19% OFF</span>
+</div>
+<!-- Descrição Sensorial -->
+<p class="font-body-md text-body-md text-on-surface-variant mt-2.5 leading-relaxed">
+      A combinação favorita dos brasileiros: metade calabresa artesanal levemente tostada com cebola fresca e azeitonas pretas chilenas, metade mussarela derretida ao forno a lenha com orégano aromático da horta. Serve 3 a 4 pessoas fartamente.
+    </p>
+<!-- Meta Chips (Tempo de preparo e avaliação) -->
+<div class="flex items-center gap-4 mt-3 py-2 px-3 rounded-xl bg-surface-container-low text-on-surface">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-on-surface font-bold">4.9</span>
+<span class="text-outline text-body-sm">(340+)</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-tertiary">cloud_download</span>
+<span>30-40 min</span>
+</div>
+<div class="w-1 h-1 rounded-full bg-outline-variant"></div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_fire_department</span>
+<span>Artesanal</span>
+</div>
+</div>
+</div>
+<!-- SEÇÕES DE CUSTOMIZAÇÃO -->
+<div class="flex flex-col gap-4 mt-2">
+<!-- PASSO 1: Escolha da Massa (Obrigatório) -->
+<div class="flex flex-col rounded-2xl bg-surface-container p-4 shadow-sm">
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-sm text-[11px] font-bold">1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escolha o tipo de massa</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 ml-7">Escolha 1 opção</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold uppercase">Obrigatório</span>
+</div>
+<div class="flex flex-col gap-2.5 mt-1">
+<!-- Opção 1 -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input checked="" class="w-5 h-5 accent-primary-container text-primary-container cursor-pointer" name="crust_type" type="radio" value="tradicional"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Massa Tradicional de Fermentação Lenta</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bordas altas, macias e aeradas no forno a lenha</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold ml-2">Grátis</span>
+</label>
+<!-- Opção 2 -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 accent-primary-container text-primary-container cursor-pointer" name="crust_type" type="radio" value="fina"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Massa Fina Crocante Italiana</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Leve, ultra crocante e delicada</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold ml-2">Grátis</span>
+</label>
+</div>
+</div>
+<!-- PASSO 2: Borda Recheada (Opcional) -->
+<div class="flex flex-col rounded-2xl bg-surface-container p-4 shadow-sm">
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-[11px] font-bold">2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Borda Recheada</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 ml-7">Escolha até 1 opção</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm font-semibold uppercase">Opcional</span>
+</div>
+<div class="flex flex-col gap-2.5 mt-1">
+<!-- Sem borda -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input checked="" class="w-5 h-5 accent-primary-container cursor-pointer" data-price="0" name="stuffed_crust" onchange="updateTotal()" type="radio" value="0"/>
+<span class="font-label-lg text-label-lg text-on-surface">Sem borda recheada</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Padrão</span>
+</label>
+<!-- Catupiry -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 accent-primary-container cursor-pointer" data-price="8" name="stuffed_crust" onchange="updateTotal()" type="radio" value="8"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Borda Catupiry Original®</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recheio farto e super cremoso</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 8,00</span>
+</label>
+<!-- Cheddar -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 accent-primary-container cursor-pointer" data-price="8" name="stuffed_crust" onchange="updateTotal()" type="radio" value="8"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Borda Cheddar Cremoso Especial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sabor marcante e aveludado</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 8,00</span>
+</label>
+<!-- Vulcão 4 Queijos -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 accent-primary-container cursor-pointer" data-price="12" name="stuffed_crust" onchange="updateTotal()" type="radio" value="12"/>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg text-on-surface">Borda Vulcão 4 Queijos</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">stars</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mussarela, provolone, gorgonzola e catupiry</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 12,00</span>
+</label>
+</div>
+</div>
+<!-- PASSO 3: Adicionais (Múltipla Escolha) -->
+<div class="flex flex-col rounded-2xl bg-surface-container p-4 shadow-sm">
+<div class="flex items-center justify-between pb-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-sm text-[11px] font-bold">3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Deseja algum adicional?</h3>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 ml-7">Turbine sua pizza</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-outline font-label-sm text-label-sm font-semibold uppercase">Opcional</span>
+</div>
+<div class="flex flex-col gap-2.5 mt-1">
+<!-- Bacon Crocante -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded accent-primary-container cursor-pointer" data-price="5" name="extra" onchange="updateTotal()" type="checkbox" value="5"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Bacon Crocante em Cubos</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Defumação artesanal na lenha</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 5,00</span>
+</label>
+<!-- Alho Frito -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded accent-primary-container cursor-pointer" data-price="3" name="extra" onchange="updateTotal()" type="checkbox" value="3"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Alho Frito Dourado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Crocante, sequinho e perfumado</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 3,00</span>
+</label>
+<!-- Extra Mussarela -->
+<label class="flex items-center justify-between p-3 rounded-xl bg-surface-container-high cursor-pointer transition-colors active:bg-surface-bright">
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded accent-primary-container cursor-pointer" data-price="6" name="extra" onchange="updateTotal()" type="checkbox" value="6"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Extra Queijo Mussarela (+150g)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Camada dupla de queijo puxando</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold whitespace-nowrap">+ R$ 6,00</span>
+</label>
+</div>
+</div>
+<!-- Campo de Observações para a Cozinha -->
+<div class="flex flex-col rounded-2xl bg-surface-container p-4 shadow-sm">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">edit_note</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Observações para o Pizzaiolo</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">
+        Diga se prefere sem cebola, ponto da massa mais tostada, ou menos orégano.
+      </p>
+<div class="relative">
+<textarea class="w-full rounded-xl bg-surface-container-high text-on-surface placeholder:text-outline p-3 font-body-md text-body-md focus:outline-none focus:bg-surface-bright transition-colors resize-none" id="chef-notes" maxlength="140" oninput="document.getElementById('char-count').innerText = this.value.length" placeholder="Ex: Por favor, sem cebola na metade da calabresa e massa bem passada..." rows="3"></textarea>
+<span class="absolute bottom-2.5 right-3 font-label-sm text-label-sm text-outline">
+<span id="char-count">0</span>/140
+        </span>
+</div>
+</div>
+<!-- Banner WhatsApp Direct Order (Canal de Atendimento Don Lourenço) -->
+<div class="flex items-center justify-between p-3.5 rounded-2xl bg-tertiary-container/30 text-on-surface shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-tertiary-fixed">Dúvidas com o pedido?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fale no WhatsApp: (11) 94574-3922</span>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1 active:scale-95 transition-transform" href="https://wa.me/5511945743922" target="_blank">
+<span>Chamar</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- BARRA INFERIOR FIXA DE FINALIZAÇÃO (Sticky Bottom Bar) -->
+<div class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/90 backdrop-blur-xl px-margin-mobile py-3 pb-safe shadow-[0_-4px_24px_rgba(0,0,0,0.6)]">
+<div class="max-w-md mx-auto flex items-center gap-3">
+<!-- Seletor de Quantidade -->
+<div class="flex items-center justify-between bg-surface-container-high rounded-full px-1.5 py-1 min-w-[104px]">
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center active:scale-90 transition-transform disabled:opacity-30" disabled="" id="btn-decrement" onclick="changeQuantity(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-on-surface px-2" id="quantity-label">1</span>
+<button class="w-8 h-8 rounded-full bg-surface-container text-on-surface flex items-center justify-center active:scale-90 transition-transform" id="btn-increment" onclick="changeQuantity(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<!-- Botão Adicionar ao Carrinho -->
+<button class="flex-1 h-12 rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg font-bold flex items-center justify-between px-5 shadow-lg shadow-primary-container/20 active:scale-[0.98] transition-all" onclick="addToBag(this)" type="button">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span>Adicionar</span>
+</span>
+<span class="font-price-tag text-price-tag text-secondary" id="final-price-tag">R$ 38,99</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let basePrice = 38.99;
+  let quantity = 1;
+
+  function calculateUnitPrice() {
+    let crustPrice = 0;
+    const selectedCrust = document.querySelector('input[name="stuffed_crust"]:checked');
+    if (selectedCrust) {
+      crustPrice = parseFloat(selectedCrust.getAttribute('data-price') || 0);
+    }
+
+    let extrasPrice = 0;
+    const selectedExtras = document.querySelectorAll('input[name="extra"]:checked');
+    selectedExtras.forEach(cb => {
+      extrasPrice += parseFloat(cb.getAttribute('data-price') || 0);
+    });
+
+    return basePrice + crustPrice + extrasPrice;
+  }
+
+  function updateTotal() {
+    const unitPrice = calculateUnitPrice();
+    const totalPrice = unitPrice * quantity;
+    const formatted = totalPrice.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    document.getElementById('final-price-tag').innerText = 'R$ ' + formatted;
+  }
+
+  function changeQuantity(delta) {
+    quantity = Math.max(1, quantity + delta);
+    document.getElementById('quantity-label').innerText = quantity;
+    document.getElementById('btn-decrement').disabled = (quantity === 1);
+    updateTotal();
+  }
+
+  function toggleFavorite(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isFav = icon.innerText === 'favorite';
+    if (isFav) {
+      icon.innerText = 'favorite_border';
+      icon.style.fontVariationSettings = "'FILL' 0";
+      btn.classList.remove('text-primary');
+      btn.classList.add('text-on-surface');
+    } else {
+      icon.innerText = 'favorite';
+      icon.style.fontVariationSettings = "'FILL' 1";
+      btn.classList.remove('text-on-surface');
+      btn.classList.add('text-primary');
+    }
+  }
+
+  function addToBag(button) {
+    const originalContent = button.innerHTML;
+    button.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+    button.classList.remove('bg-primary-container', 'text-on-primary-container');
+    button.innerHTML = `
+      <div class="flex items-center justify-center w-full gap-2">
+        <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <span class="font-headline-sm text-headline-sm">Pizza adicionada!</span>
+      </div>
+    `;
+
+    setTimeout(() => {
+      button.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+      button.classList.add('bg-primary-container', 'text-on-primary-container');
+      button.innerHTML = originalContent;
+      updateTotal();
+    }, 1800);
+  }
+</script></main></body></html>

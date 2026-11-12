@@ -17,10 +17,13 @@ const cart = new Map();
 const pizzaGrid = document.querySelector("#pizza-grid");
 const cartPanel = document.querySelector("#cart-panel");
 const cartBackdrop = document.querySelector("#cart-backdrop");
+const addConfirmation = document.querySelector("#add-confirmation");
+let addConfirmationTimeout;
+let activeCategory = "todas";
 
 const formatPrice = (price) => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(price);
 
-function renderPizzas(category = "todas") {
+function renderPizzas(category = "todas", direction = 1, animate = false) {
   const visiblePizzas = category === "todas" ? pizzas : pizzas.filter((pizza) => pizza.category === category);
   const cards = visiblePizzas.map((pizza) => {
     const card = document.createElement("article");
@@ -79,6 +82,11 @@ function renderPizzas(category = "todas") {
     return card;
   });
   pizzaGrid.replaceChildren(...cards);
+  if (animate) {
+    pizzaGrid.classList.remove("is-entering-forward", "is-entering-backward");
+    void pizzaGrid.offsetWidth;
+    pizzaGrid.classList.add(direction > 0 ? "is-entering-forward" : "is-entering-backward");
+  }
 }
 
 function renderCart() {
@@ -134,6 +142,15 @@ function renderCart() {
   document.querySelector("#cart-items").replaceChildren(...itemElements);
 }
 
+function showAddConfirmation(pizzaName) {
+  addConfirmation.textContent = `${pizzaName} adicionada à sacola.`;
+  addConfirmation.hidden = false;
+  clearTimeout(addConfirmationTimeout);
+  addConfirmationTimeout = setTimeout(() => {
+    addConfirmation.hidden = true;
+  }, 3000);
+}
+
 function setCartOpen(isOpen) {
   cartPanel.classList.toggle("is-open", isOpen);
   cartPanel.setAttribute("aria-hidden", String(!isOpen));
@@ -146,13 +163,16 @@ function setCartOpen(isOpen) {
 
 document.querySelector(".category-tabs").addEventListener("click", (event) => {
   const button = event.target.closest("[data-category]");
-  if (!button) return;
+  if (!button || button.dataset.category === activeCategory) return;
+  const categories = [...document.querySelectorAll(".category-tab")].map((tab) => tab.dataset.category);
+  const direction = categories.indexOf(button.dataset.category) > categories.indexOf(activeCategory) ? 1 : -1;
   document.querySelectorAll(".category-tab").forEach((tab) => {
     const isActive = tab === button;
     tab.classList.toggle("is-active", isActive);
     tab.setAttribute("aria-pressed", String(isActive));
   });
-  renderPizzas(button.dataset.category);
+  activeCategory = button.dataset.category;
+  renderPizzas(activeCategory, direction, true);
 });
 
 pizzaGrid.addEventListener("click", (event) => {
@@ -162,6 +182,7 @@ pizzaGrid.addEventListener("click", (event) => {
   const current = cart.get(pizza.id);
   cart.set(pizza.id, { pizza, quantity: (current?.quantity ?? 0) + 1 });
   renderCart();
+  showAddConfirmation(pizza.name);
 });
 
 document.querySelector("#cart-items").addEventListener("click", (event) => {

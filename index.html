@@ -14,9 +14,10 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <div class="announcement">
-      <span class="announcement__dot" aria-hidden="true"></span>
-      Frete grátis acima de R$ 60 <span class="announcement__separator">•</span> entrega estimada em 35–45 min
+    <div class="announcement" role="region" aria-label="Informações de entrega e ofertas">
+      <span class="announcement__item"><strong>Frete grátis</strong><span>em pedidos acima de R$ 60</span></span>
+      <span class="announcement__separator" aria-hidden="true">•</span>
+      <span class="announcement__item"><strong>Entrega</strong><span>estimada em 35–45 min</span></span>
       <a href="#ofertas">Ver ofertas <span aria-hidden="true">↗</span></a>
     </div>
 
@@ -103,9 +104,10 @@
     <footer class="site-footer">
       <a class="brand brand--footer" href="#inicio" aria-label="Pizzaria Don Lourenço, início"><img class="brand__logo" src="LogoPizzaria.jpeg" alt="Pizzaria Don Lourenço — Sabor que conquista" /></a>
       <a class="footer-contact" href="https://wa.me/5511945743922" target="_blank" rel="noopener noreferrer">WhatsApp (11) 94574-3922 ↗</a>
-      <span>Don Lourenço · Sabor que conquista</span>
+      <span class="footer-credit">Cardápio desenvolvido por Christian</span>
     </footer>
 
+    <div class="add-confirmation" id="add-confirmation" role="status" aria-live="polite" aria-atomic="true" hidden></div>
     <div class="cart-backdrop" id="cart-backdrop" hidden></div>
     <aside class="cart-panel" id="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" inert>
       <div class="cart-panel__header">
