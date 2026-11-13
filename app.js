@@ -96,6 +96,16 @@ function renderCart() {
   document.querySelector("#cart-count").textContent = itemCount;
   document.querySelector("#cart-title-count").textContent = itemCount ? `(${itemCount})` : "";
   document.querySelector("#cart-subtotal").textContent = formatPrice(subtotal);
+  const orderLines = cartItems.map(({ pizza, quantity }) => {
+    const quantityLabel = quantity > 1 ? ` (quantidade: ${quantity})` : "";
+    return `° Pizza ${pizza.name}${quantityLabel} no valor de ${formatPrice(pizza.price)}!`;
+  });
+  const orderMessage = [
+    "Olá, pizzaiolo!",
+    "Após verificar o cardápio, vou querer pedir o seguinte:",
+    ...orderLines
+  ].join("\n");
+  document.querySelector("#place-order").href = `https://wa.me/5511945743922?text=${encodeURIComponent(orderMessage)}`;
   document.querySelector("#cart-delivery-note").textContent = subtotal > 60 ? "Você ganhou frete grátis." : "Frete grátis acima de R$ 60.";
   document.querySelector("#cart-empty").hidden = itemCount > 0;
   document.querySelector("#cart-footer").hidden = itemCount === 0;
@@ -197,7 +207,6 @@ document.querySelector("#cart-items").addEventListener("click", (event) => {
 
 document.querySelector("#open-cart").addEventListener("click", () => setCartOpen(true));
 document.querySelector("#close-cart").addEventListener("click", () => setCartOpen(false));
-document.querySelector("#continue-shopping").addEventListener("click", () => setCartOpen(false));
 document.querySelector("#browse-menu").addEventListener("click", () => setCartOpen(false));
 cartBackdrop.addEventListener("click", () => setCartOpen(false));
 document.addEventListener("keydown", (event) => {
